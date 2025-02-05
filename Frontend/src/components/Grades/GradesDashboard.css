@@ -1,0 +1,127 @@
+Container for the entire dashboard
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers items horizontally */
+    justify-content: center; /* Centers items vertically */
+    min-height: 100vh; /* Ensures the container takes full height of the viewport */
+    padding: 20px;
+  }
+  
+  
+  /* Centering the content of the cards */
+  .card-centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .card-centered h6 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #6c757d;
+  }
+  
+  .card-centered h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #3f51b5;
+    margin-top: 8px;
+  }
+  
+  /* Standard card styling */
+  .card-padding {
+    padding: 20px;
+    background-color: #1c0707;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .card-padding h6 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #6c757d;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for the form and select dropdowns */
+  .MuiGrid-item {
+    margin-bottom: 20px;
+  }
+  
+  .MuiFormControl-root {
+    margin-bottom: 20px;
+  }
+  
+  .MuiSelect-root {
+    background-color: #fff;
+    border-radius: 4px;
+  }
+  
+  .MuiMenuItem-root {
+    font-size: 14px;
+  }
+  
+  .MuiTypography-root {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Styling for Pie chart container */
+  .PieChart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .PieChart .recharts-wrapper {
+    width: 100% !important;
+    max-width: 400px; /* Adjust max width for better responsiveness */
+    margin: 0 auto;
+  }
+  
+  .PieChart .recharts-pie-sector {
+    transition: transform 0.3s ease; /* Smooth transition when pie slices are hovered */
+  }
+  
+  .PieChart .recharts-tooltip-item {
+    font-size: 14px;
+    font-weight: 600;
+    color: #34495e;
+  }
+  
+  .PieChart .recharts-tooltip {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    color: #fff !important;
+    border-radius: 4px;
+    padding: 10px;
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .PieChart {
+      width: 80% !important; /* Adjust chart width for smaller screens */
+    }
+  
+    .PieChart .recharts-wrapper {
+      max-width: 100%;
+    }
+  
+    .PieChart .recharts-tooltip-item {
+      font-size: 12px; /* Slightly smaller text for tooltips on mobile */
+    }
+  
+    .PieChart .recharts-pie-sector {
+      transform: scale(1.1); /* Make the pie sectors a bit larger on hover for better visual feedback */
+    }
+  }
+  

@@ -1,0 +1,107 @@
+/* General styles for the form and records */
+form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+form input {
+  width: 100%;
+  padding: 8px; /* Reduced padding */
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+form button {
+  padding: 10px 18px; /* Reduced padding */
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+  background-color: #45a049;
+  transform: scale(1.05); /* Button scale effect on hover */
+}
+
+/* Table styles for the attendance list */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #4caf50;
+  color: white;
+}
+
+table td {
+  background-color: #f9f9f9;
+}
+
+/* Button styles for delete and edit */
+button {
+  padding: 6px 14px; /* Reduced padding */
+  width: auto; /* Set width to auto for a more compact button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.8;
+  transform: scale(1.05); /* Button scale effect on hover */
+}
+
+/* Styles for delete button */
+button.delete {
+  background-color: #e74c3c;
+  color: white;
+  width: 100px; /* Fixed width for delete button */
+}
+
+button.delete:hover {
+  background-color: #c0392b;
+}
+
+/* Styles for edit button */
+button.edit {
+  background-color: #3498db;
+  color: white;
+  width: 100px; /* Fixed width for edit button */
+}
+
+button.edit:hover {
+  background-color: #2980b9;
+}

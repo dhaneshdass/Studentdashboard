@@ -1,0 +1,68 @@
+.sidebar {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  height: 60px;
+  flex-direction: row; /* Horizontal layout */
+  align-items: center; /* Vertically align items */
+  background-color: #3949ab; /* Blue background */
+  padding: 10px 20px; /* Add padding for spacing */
+  gap: 50px; /* Space between items */
+  justify-content: space-between; /* Spread items across the available width */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for design */
+}
+
+.sidebar h2 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: white;
+}
+
+.sidebar ul {
+  display: flex;
+  list-style: none; /* Remove bullet points */
+  margin: 0;
+  padding: 0;
+  gap: 30px; /* Add spacing between menu items */
+}
+
+.sidebar li {
+  margin: 0;
+}
+
+.sidebar a {
+  text-decoration: none; /* Remove underline */
+  color: white; /* White text color */
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.sidebar a:hover {
+  color: #ffca28; /* Highlight color on hover */
+}
+
+.auth-buttons {
+  display: flex; /* Flexbox for the button container */
+  align-items: center; /* Vertically align the button content */
+}
+
+.login-btn {
+  display: flex;
+  align-items: center; /* Align icon and text vertically */
+  text-decoration: none;
+  color: white; /* Text color */
+  background-color: #007bff; /* Button background color */
+  padding: 8px 16px; /* Padding for the button */
+  border-radius: 20px; /* Rounded corners */
+  gap: 8px; /* Space between the icon and text */
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.icon {
+  width: 20px; /* Set the width of the icon */
+  height: 20px; /* Set the height of the icon */
+}
